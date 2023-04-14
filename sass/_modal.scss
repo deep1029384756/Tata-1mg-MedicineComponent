@@ -1,0 +1,93 @@
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100%;
+    background-color: rgb(0,0,0,0.9);
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+    &__container{
+        display: flex;
+        flex-direction: row-reverse;
+        height:70%;
+        width:85%;
+        background-color: $frontcolor;
+        padding:15px;
+        @media screen and (max-width:900px){
+            height:60%;
+        }
+        @media screen and (max-width:650px){
+            height:70%;
+            flex-direction: column;
+           width: 70%;
+        }
+        &--image{
+            height:100%;
+            width:45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                height: 70%;
+                width:70%;
+            }
+            @media screen and (max-width:650px){
+                
+                height: 40%;
+                width:90%;
+            }
+        }
+        &--list{
+            height:100%;
+            width:45%;
+            @media screen and (max-width:650px){
+                height:40%;
+                width:100%;
+            }
+            ul{
+                height:100%;
+                width:100%;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: row wrap;
+                padding: 20px;
+                border:1px solid $titlecolor;
+               li{
+                cursor: pointer;
+                padding: 10px;
+                 height:30%;
+                 width:30%;
+                 @media screen and (max-width:650px){
+                    height:70%;
+                    width:25%;
+                }
+               }
+            }
+        }
+        &--cross{
+            height:100%;
+            width:10%;
+            text-align: end;
+            font-weight: 800;
+            cursor: pointer;
+            @media screen and (max-width:650px){
+                height:5%;
+                width: 100%;
+                text-align: end;
+            }
+        }
+    }
+    .border{
+        border:1px solid $linkcolor
+    }
+}
+.show{
+    display: flex !important;
+}

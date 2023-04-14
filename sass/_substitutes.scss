@@ -1,0 +1,73 @@
+.substitutes{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    &__title{
+        @include title;
+        font-size: 16px;
+    }
+    &__para{
+        @include para;
+    }
+    &__box{
+        display: flex;
+        width:60%;
+        column-gap: 20px;
+        &--link-box{
+            height:100%;
+            width:50%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            font-size: 14px;
+            &--link{
+                .link1{
+                    color:$textcolor;
+                    font-weight: 500;
+                }
+                .link{
+                    color: $buttoncolor;
+                    font-weight: 600;
+                }
+                .para{
+                    font-size: 12px;
+                }
+            }
+        }
+        &--data-box{
+            height:100%;
+            width:50%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            font-size: 14px;
+            &--box{
+                .cost1{
+                    color:$textcolor;
+                    font-weight: 500;
+                }
+                .rate{
+                    color:$ratecolor;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    &__button{
+        background-color: $buttoncolor;
+        width:fit-content;
+        padding: 10px 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        color: $frontcolor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        img{
+            height:15px;
+            width:15px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.tablet-work{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    &__title{
+        color: $headcolor;
+    font-size: 14px;
+    font-weight: 900;
+    }
+    &__text{
+       @include para;
+        margin-bottom: 50px;
+    }
+}

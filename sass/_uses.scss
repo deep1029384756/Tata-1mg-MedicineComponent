@@ -1,0 +1,51 @@
+.uses-benfits {
+    &__uses {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        &__title {
+            font-size: 14px;
+            color: $headcolor;
+            font-weight: 900;
+        }
+
+        &__list {
+            padding: 10px;
+            font-size: 14px;
+            font-color: $titlecolor;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+
+                .text2 {
+                    color: $linkcolor;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__benefits {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        &__title {
+            font-size: 14px;
+            color: $headcolor;
+            font-weight: 900;
+        }
+
+        &__para {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            @include para;
+        }
+    }
+}

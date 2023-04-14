@@ -1,0 +1,35 @@
+.facts{
+    padding:10px;
+    &__title{
+        @include title;
+        font-size: 16px;
+    }
+    &__boxes{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        &--box{
+            display: flex;
+            width:60%;
+            justify-content: space-between;
+            padding:6px 5px;
+            background-color: $buttonback;
+            border-radius: 4px;
+            .question{
+                font-size: 12px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+            }
+            .ans{
+                width: 50%;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                color:$headcolor;
+                font-weight: 600;
+            }
+        }
+    }
+}

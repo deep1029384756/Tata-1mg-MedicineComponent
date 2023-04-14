@@ -1,0 +1,45 @@
+.quick{
+padding:10px;
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+&__title{
+    @include title;
+    font-size: 16px;
+}
+&__info-box{
+    display: flex;
+    column-gap: 30px;
+   // padding:20px;
+    &--list{
+        height:100%;
+        width:40%;
+        padding:10px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            li{
+                @include para;
+            }
+        }
+    }
+    &--video{
+        height:100%;
+        width:60%;
+        .video{
+            height: 90%;
+            width:90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .play{
+                position: absolute;
+                height: 61px;
+                width: 61px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+}

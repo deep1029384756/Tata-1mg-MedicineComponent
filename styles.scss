@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #fafafa;
+}
+
+@import "./sass/varibales";
+@import "./sass/mixins";
+@import "./sass/component1";
+@import "./sass/uses";
+@import "./sass/minislider";
+@import "./sass/sideeffects";
+@import "./sass/tabletuse";
+@import "./sass/tabletwork";
+@import "./sass/modal";
+@import "./sass/forget";
+@import "./sass/safetydevice";
+@import "./sass/substitutes";
+@import "./sass/facts";
+@import "./sass/quick"

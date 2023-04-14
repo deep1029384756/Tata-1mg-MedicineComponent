@@ -1,0 +1,36 @@
+.side-effects{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    &__header{
+        color:$headcolor;
+        font-size: 15px;
+        font-weight: 900;
+    }
+    &__text{
+        @include para;
+    }
+    &__header2{
+        color:$backtext;
+        background: $textback;
+        width: fit-content;
+        border-radius: 16px;
+        padding: 5px 10px;
+    }
+    &__list{
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding: 10px;
+            li{
+                font-size: 14px;
+                font-weight: 400;
+                color: $titlecolor
+            }
+            
+        }
+    }
+}

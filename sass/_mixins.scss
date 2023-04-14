@@ -1,0 +1,10 @@
+@mixin para {
+    font-size: 14px;
+    color: $textcolor;
+    font-weight: 600;
+}
+@mixin title{
+    color: $headcolor;
+    font-size: 14px;
+    font-weight: 900;
+}
